@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array</title>
+        <script>
+            /* Exercício 1
+             var numeros = [];
+            for (i = 0; i < 20; i++ ) {
+            numeros [i] = parseInt(prompt("Por favor, digite 20 números:"));
+            }
+            alert('Os números são ' + numeros );
+            */
+
+            /* Exercício 2
+            var numeros_acima = [];
+            var numeros_abaixo = [];
+   
+                for (i = 0; i < 12; i++) {
+                var pergunta = parseInt (prompt("Por favor, digite 12 números: "));
+
+                    if (pergunta > 50) {
+                    numeros_acima.push(pergunta)
+                    }
+            
+                    else {
+                    numeros_abaixo.push(pergunta)
+                    }
+            }
+
+            alert("Os números maiores que 50 são " + numeros_acima);
+            alert("Os números menores a 50 são " + numeros_abaixo);
+            */
+
+            
+            var drofo = ['anel da invisibilidade', 'dois pares de botas mágicas',  'uma poção do sono', 'duas poções da inocência'];
+
+            var torper = ['capa da invisibilidade', 'uma pedra do despertar' , 'uma varinha das varinhas', 'uma poção da inocência', 'duas poções da mentira', 'poção anti-inteligência' ];
+
+            
+            drofo.splice(1,1);
+            torper.splice(4,1,'par de botas magicas');
+
+           
+            torper.splice(1,1,'escudo magico');
+            torper.push('espada magica');
+
+          
+            drofo.splice(2,1,'bota magica');
+        
+            
+            torper.splice(6,1);
+            drofo.push('ovo de dragao', 'coxinha');
+
+            document.write ('O inventário de Drofo está ' + drofo + "<br>");
+            document.write ('O inventário de Topper está ' + torper + "<br>");
+            
+
+        </script>
+</head>
+<body>
+    
+</body>
+</html>
